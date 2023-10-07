@@ -17,24 +17,5 @@ public class StartApplication{
         SpringApplication.run(StartApplication.class, args);
     }
 
-//    @Override
-//    public void run(String... args) {
-//
-//        log.info("StartApplication...");
-//
-//        repository.save(new Book("Java234"));
-//        repository.save(new Book("Node567"));
-//        repository.save(new Book("Python789"));
-
-//        System.out.println("\nfindAll()");
-//        repository.findAll().forEach(x -> System.out.println(x));
-//
-//        System.out.println("\nfindById(1L)");
-//        repository.findById(1l).ifPresent(x -> System.out.println(x));
-//
-//        System.out.println("\nfindByName('Node')");
-//        repository.findByName("Node").forEach(x -> System.out.println(x));
-//
-//    }
 
 }
