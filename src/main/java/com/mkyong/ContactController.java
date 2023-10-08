@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -36,7 +37,7 @@ public class ContactController {
 		model.addAttribute("contact",new ContactInfo());
 		return "contact_test1.html";
 	}
-	@RequestMapping(value="/spring-data-jpa-mysql/saveMsg", method=RequestMethod.POST)
+	@PostMapping(value="/spring-data-jpa-mysql/saveMsg")
 	public String save_contact_msg(@ModelAttribute ContactInfo contact,Errors error) {
 		System.out.println("In savemsg method");
 		if(error.hasErrors()) {
