@@ -36,7 +36,7 @@ public class ContactController {
 		model.addAttribute("contact",new ContactInfo());
 		return "contact_test1.html";
 	}
-	@RequestMapping(value="/saveMsg", method=RequestMethod.POST)
+	@RequestMapping(value="/spring-data-jpa-mysql/saveMsg", method=RequestMethod.POST)
 	public String save_contact_msg(@ModelAttribute ContactInfo contact,Errors error) {
 		System.out.println("In savemsg method");
 		if(error.hasErrors()) {
