@@ -22,8 +22,8 @@ pipeline {
         }
         stage('Deployed in staging') {
             steps {
-              echo 'Deployed in staging..'
-              build :'deployed-in-staging'
+              echo 'Deployed in staging666..'
+              build 'deployed-in-staging'
             }
         }
     }
