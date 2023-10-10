@@ -20,10 +20,10 @@ pipeline {
             }
 
         }
-        stage('triggerChildJob') {
+        stage('Deployed in staging') {
             steps {
               echo 'Deployed in staging..'
-              build job:'deployed-in-staging',wait: true
+              build :'deployed-in-staging'
             }
         }
     }
