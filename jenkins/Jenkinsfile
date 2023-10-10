@@ -12,9 +12,19 @@ pipeline {
                 echo 'Building..'
             }
         }
-        stage('Deploy') {
+        stage('Deployed in prod') {
             steps {
                 echo 'Code deployed....'
+            }
+        }
+        stage('Deployed in dev') {
+            steps {
+                echo 'Deployed in dev..'
+            }
+        }
+        stage('Deployed in QA') {
+            steps {
+                echo 'Deployed in qa..'
             }
         }
     }
