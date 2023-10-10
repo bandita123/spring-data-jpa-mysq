@@ -23,7 +23,7 @@ pipeline {
         stage('Deployed in staging') {
             steps {
               echo 'Deployed in staging..'
-              build :'deployed-in-staging'
+              build job:'deployed-in-staging',wait: true
             }
         }
     }
