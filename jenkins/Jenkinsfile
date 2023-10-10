@@ -10,21 +10,19 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'mvn clean package'
             }
-        }
-        stage('Deployed in prod') {
-            steps {
-                echo 'Code deployed....'
+            post{
+                success{
+                    archiveArtifacts artifacts:'**/target/*.war'
+                }
+
             }
+
         }
-        stage('Deployed in dev') {
+        stage('Deployed in staging') {
             steps {
-                echo 'Deployed in dev..'
-            }
-        }
-        stage('Deployed in QA') {
-            steps {
-                echo 'Deployed in qa..'
+                build job:'deployed-in-staging'
             }
         }
     }
