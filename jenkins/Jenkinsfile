@@ -22,8 +22,8 @@ pipeline {
         }
         stage('Deployed in staging') {
             steps {
-                build job: "deployed-in-staging", wait: true
-                
+              echo 'Deployed in staging..'
+              build job:'deployed-in-staging',wait: true
             }
         }
     }
