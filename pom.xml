@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-data-jpa-mysql</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>Spring Boot Spring Data JPA MYSQL</name>
     <version>1.0</version>
 
