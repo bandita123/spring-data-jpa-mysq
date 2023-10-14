@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Contact page of Eazy school web application</title>
+</head>
+<body>
+<h1 th:text="'Hey, '+ ${username} + '!!!Welcome to eazy school new app'"></h1>
+
+<br/>
+<ul>
+ <li th:each="error:${#fields.errors('contact.*')}" th:text="${error}"/>
+</ul>
+
+<form action="@{/saveMsg}" method="POST" th:object="${contact}">
+Name: <input type="text" th:field="*{username}" Placeholder="Enter Name" /><br/><br/><br/>
+Mobile Number: <input type="text" th:field="*{mobno}" Placeholder="Enter Mobile Number" /><br/><br/><br/>
+Email: <input type="text" th:field="*{email}" Placeholder="Enter Email Id" /><br/><br/><br/>
+Subject: <input type="text" th:field="*{subject}" Placeholder="Enter Subject" /><br/><br/><br/>
+Message: <input type="text" th:field="*{message}" Placeholder="Enter Message" /><br/><br/><br/>
+<input type="submit" name="submit" value="Submit Information"/>
+
+</form>
+
+
+</body>
+</html>

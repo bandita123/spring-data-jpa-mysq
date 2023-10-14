@@ -1,0 +1,16 @@
+com\mkyong\ContactController.class
+com\mkyong\rest\ContactRestController.class
+com\mkyong\Book.class
+com\mkyong\PersonRepository.class
+com\mkyong\ContactService.class
+com\mkyong\EmployeeController.class
+com\mkyong\rest\GlobalExceptionHandler.class
+com\mkyong\ContactRepository.class
+com\mkyong\Roles.class
+com\mkyong\StartApplication.class
+com\mkyong\ContactInfo.class
+com\mkyong\rest\Response.class
+com\mkyong\AddressRepository.class
+com\mkyong\Person.class
+com\mkyong\Address.class
+com\mkyong\RolesRepository.class
