@@ -47,7 +47,7 @@ public class ContactController {
 		contactservice.setCounter(contactservice.getCounter()+1);
 		contactservice.saveMessageDetails(contact);
 		
-		log.info("Number of times form submitted:::"+contactservice.getCounter());
+		log.info("Number of times form submitted:::888"+contactservice.getCounter());
 		return "redirect:/contact";
 	}
 }
